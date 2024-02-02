@@ -6,8 +6,11 @@ suits = ["\u2660", "\u2665", "\u2666", "\u2663"] # Буби, черви, кре�
 cards = []
 values.each do |value|
   suits.each do |suit|
-    cards << "#{value} of #{suit}"
+    cards << "[#{value}|#{suit}]"
   end
+end
+2.times do
+  cards << '[Joker]'
 end
 
 cards.shuffle!
